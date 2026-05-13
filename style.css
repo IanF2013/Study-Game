@@ -1,0 +1,142 @@
+/* --- 1. GLOBAL LAYOUT --- */
+body {
+  background-color: #BBB;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+.nav-row {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+#list-container {
+  width: 100%;
+  margin-top: 40px;
+  border-top: 2px solid #000;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.container input {
+  flex: 1;
+  padding: 8px;
+  border-radius: 5px;
+  border: 2px solid black;
+  background-color: white;
+}
+
+/* --- 2. BUTTONS --- */
+.button-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  border-top: 2px solid #000;
+  padding-top: 20px;
+}
+
+#add-btn, .play, .back, .answer, #auth-submit, #auth-close {
+  padding: 10px 25px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 2px solid black;
+  background-color: white;
+}
+
+.remove-btn {
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 2px solid black;
+  background-color: white;
+  color: red;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+/* --- 3. GAME SCREEN --- */
+h1 {
+  background-color: white;
+  border: 2px solid black;
+  padding: 20px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+#options {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.answer {
+  flex: 0 0 24%;
+  text-align: center;
+}
+
+.PS {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  border-top: 2px solid #000;
+  padding-top: 10px;
+}
+
+h2 {
+  display: inline-block;
+  padding: 5px 15px;
+  border-radius: 5px;
+  border: 2px solid black;
+  background-color: white;
+  margin: 0;
+}
+
+.back {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+/* --- 4. AUTH MODAL --- */
+.modal-overlay {
+  position: fixed;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex; justify-content: center; align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 30px;
+  border: 3px solid black;
+  border-radius: 10px;
+  text-align: center;
+  width: 300px;
+}
+
+.modal-content input {
+  display: block;
+  width: 90%;
+  margin: 10px auto;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
