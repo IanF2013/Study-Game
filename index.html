@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Study Game</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- AUTH BUTTONS -->
+  <div class="nav-row">
+    <button id="signup-nav" class="play">Sign Up</button>
+    <button id="login-nav" class="play">Login</button>
+    <button id="logout-nav" class="play" style="display:none;">Sign Out</button>
+  </div>
+
+  <!-- MAIN STUDY LIST -->
+  <div id="list-container">
+    <br>
+    <div id="card-rows"></div>
+    <div class="button-row">
+      <button id="add-btn">Add Item</button>
+      <button id="play-Btn" class="play">Play</button>
+    </div>
+  </div>
+
+  <!-- GAME SCREEN -->
+  <div id="game" style="display:none;"></div>
+
+  <!-- AUTH MODAL -->
+  <div id="auth-modal" class="modal-overlay" style="display:none;">
+    <div class="modal-content">
+      <h3 id="modal-title">Login</h3>
+      <input type="text" id="username" placeholder="Username">
+      <input type="password" id="password" placeholder="Password">
+      <div class="modal-buttons">
+        <button id="auth-submit">Submit</button>
+        <button id="auth-close">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
